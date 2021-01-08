@@ -1,0 +1,290 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="es-CO">
+
+<head>
+    <vtex:metaTags />
+    <vtex:template id="commonStyles" />
+    <link rel="stylesheet" type="text/css" href="/files/SG-static.min.css" />
+    <link rel="stylesheet" type="text/css" href="/files/SG-reclamaciones.min.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <vtex:template id="SG-favicon" />
+
+    <title>SUGO | Reclamaciones</title>
+</head>
+
+<body class="static">
+    <header>
+        <vtex:template id="SG-header" />
+    </header>
+
+    <vtex:contentPlaceHolder id="titulo-seccion" />
+
+    <div class="boxStatic container-box">
+        <form>
+            <div class="twoColumns">
+                <div class="boxLeft">
+                    <ul>
+                        <li>Razón Social: SUGO S.A.C.</li>
+                        <li>RUC: 20601380758</li>
+                        <li>Dirección: Av. Alejandro Velasco Astete N° 1918, Urb. Alborada, Santiago de Surco, Lima</li>
+                    </ul>
+                    <p class="NumRec">Reclamo N° <span id="complainId">xxxxxxxx-2020</span></p>
+                </div>
+                <div class="boxRight">
+                    <h3>Indentificación del consumidor reclamante</h3>
+                    <div class="itemForm">
+                        <label>Nombre</label>
+                        <input class="requiredField" id="nameUser" type="text" />
+                    </div>
+                    <div class="itemForm">
+                        <label>Apellido</label>
+                        <input class="requiredField" id="lastNameUser" type="text" />
+                    </div>
+                </div>
+            </div>
+            <h2 class="titleLine">Datos de contacto del consumidor reclamante</h2>
+            <div class="boxFull">
+                <div class="itemForm">
+                    <label>Teléfono Celular</label>
+                    <input class="requiredField" id="phone" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Otro Teléfono (opcional)</label>
+                    <input id="optionalPhone" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Tipo de Dirección</label>
+                    <select class="requiredField" id="streetType" type="text" value="Seleccione">
+                        <option>Seleccione un Tipo de Dirección</option>
+                        <option>Avenida</option>
+                        <option>Calle</option>
+                        <option>Jirón</option>
+                        <option>Pasaje</option>
+                    </select>
+                </div>
+                <div class="itemForm">
+                    <label>Dirección</label>
+                    <input class="requiredField" id="street" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Nro/Lote</label>
+                    <input class="requiredField" id="streetComplement" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Depto./Int (opcional)</label>
+                    <input id="streetComplement2" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Urbanización (opcional)</label>
+                    <input id="neighborhood" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Referencia (opcional)</label>
+                    <input id="streetReference" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Departamento</label>
+                    <select class="requiredField" id="department" type="text" value="Seleccione">
+                        <option>Seleccione un Departamento</option>
+                        <option value="Lima">Lima</option>
+                    </select>
+                </div>
+
+                <div class="itemForm">
+                    <label>Provincia</label>
+                    <select class="requiredField" id="province" type="text" value="Seleccione">
+                        <option>Seleccione una Provincia</option>
+                        <option value="Lima">Lima</option>
+                    </select>
+                </div>
+
+                <div class="itemForm">
+                    <label>Distrito</label>
+                    <select class="requiredField" id="district" type="text" value="Seleccione">
+                        <option>Seleccione un Distrito</option>
+                        <option value="Lima">Lima</option>
+                        <option value="Ancon">Ancon</option>
+                        <option value="Ate">Ate</option>
+                        <option value="Barranco">Barranco</option>
+                        <option value="Breña">Breña</option>
+                        <option value="Carabayllo">Carabayllo</option>
+                        <option value="Chaclacayo">Chaclacayo</option>
+                        <option value="Chorrillos">Chorrillos</option>
+                        <option value="Cieneguilla">Cieneguilla</option>
+                        <option value="Comas">Comas</option>
+                        <option value="El Agustino">El Agustino</option>
+                        <option value="Independencia">Independencia</option>
+                        <option value="Jesus Maria">Jesus Maria</option>
+                        <option value="La Molina">La Molina</option>
+                        <option value="La Victoria">La Victoria</option>
+                        <option value="Lince">Lince</option>
+                        <option value="Los Olivos">Los Olivos</option>
+                        <option value="Lurigancho">Lurigancho</option>
+                        <option value="Lurin">Lurin</option>
+                        <option value="Magdalena Del Mar">Magdalena Del Mar</option>
+                        <option value="Miraflores">Miraflores</option>
+                        <option value="Pachacamac">Pachacamac</option>
+                        <option value="Pucusana">Pucusana</option>
+                        <option value="Pueblo Libre">Pueblo Libre</option>
+                        <option value="Puente Piedra">Puente Piedra</option>
+                        <option value="Punta Hermosa">Punta Hermosa</option>
+                        <option value="Punta Negra">Punta Negra</option>
+                        <option value="Rimac">Rimac</option>
+                        <option value="San Bartolo">San Bartolo</option>
+                        <option value="San Borja">San Borja</option>
+                        <option value="San Isidro">San Isidro</option>
+                        <option value="San Juan De Lurigancho">San Juan De Lurigancho</option>
+                        <option value="San Juan De Miraflores">San Juan De Miraflores</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="San Martin De Porres">San Martin De Porres</option>
+                        <option value="San Miguel">San Miguel</option>
+                        <option value="Santa Anita">Santa Anita</option>
+                        <option value="Santa Maria Del Mar">Santa Maria Del Mar</option>
+                        <option value="Santa Rosa">Santa Rosa</option>
+                        <option value="Santiago De Surco">Santiago De Surco</option>
+                        <option value="Surquillo">Surquillo</option>
+                        <option value="Villa El Salvador">Villa El Salvador</option>
+                        <option value="Villa Maria Del Triunfo">Villa Maria Del Triunfo</option>
+                    </select>
+                </div>
+
+            </div>
+            <div class="boxFull">
+                <div class="itemForm">
+                    <label>Tipo de documento</label>
+                    <select class="requiredField" id="documentType" type="text" value="Seleccione">
+                        <option>Seleccione el tipo de documento</option>
+                        <option>DNI</option>
+                        <option>Pasaporte</option>
+                        <option>Carnet de extranjería</option>
+                    </select>
+                </div>
+                <div class="itemForm">
+                    <label>Número de documento</label>
+                    <input class="requiredField" id="document" type="text" />
+                </div>
+                <div class="itemForm">
+                    <label>Email</label>
+                    <input class="requiredField" id="email" type="text" />
+                </div>
+            </div>
+            <div class="twoColumns">
+                <div class="boxLeft">
+                    <div class="itemForm">
+                        <label>Monto del bien objeto de Reclamo</label>
+                        <input class="requiredField" id="amountProduct" type="text" />
+                    </div>
+                    <div class="itemForm">
+                        <label>Identificación del Bien contratado</label>
+                        <select class="requiredField" id="amountType" type="text" value="Seleccione">
+                            <option>Seleccione un tipo de bien</option>
+                            <option>Producto</option>
+                            <option>Servicio</option>
+                        </select>
+                    </div>
+                    <div class="itemForm requiredField specialAge">
+                        <label>¿Eres menor de edad?</label>
+                        <label class="checkbox">
+                            <input name="radioAge" id="ageYes" type="radio" /><span>Si</span></label>
+                        <label class="checkbox">
+                            <input name="radioAge" id="ageNo" type="radio" checked="true" /><span>No</span></label>
+                    </div>
+                </div>
+                <div class="boxRight">
+                    <div class="itemForm">
+                        <label>Descripción</label>
+                        <textarea class="requiredField" id="descriptionComplain" type="text"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boxFull container-youngerAge hide">
+                <h2 class="titleLine">Datos del Padre / Madre / Tutor</h2>
+                <div class="itemForm">
+                    <label>Nombre Completo</label>
+                    <input class="requiredField" id="nameUserTutor" type="text" />
+                </div>
+
+                <div class="itemForm">
+                    <label>Email</label>
+                    <input id="emailTutor" type="text" />
+                </div>
+
+                <div class="itemForm">
+                    <label>Tipo de documento</label>
+                    <select class="requiredField" id="documentTypeTutor" type="text" value="Seleccione">
+                        <option>Seleccione el tipo de documento</option>
+                        <option>DNI</option>
+                        <option>Pasaporte</option>
+                        <option>Carnet de extranjería</option>
+                    </select>
+                </div>
+
+                <div class="itemForm">
+                    <label>Número de documento</label>
+                    <input class="requiredField" id="documentTutor" type="text" />
+                </div>
+            </div>
+
+            <h2 class="titleLine">Detalle de la reclamación</h2>
+            <div class="twoColumns">
+                <div class="boxLeft">
+                    <div class="itemForm">
+                        <label>Número de Pedido (Opcional)</label>
+                        <input id="orderId" type="text" />
+                    </div>
+                    <div class="itemForm">
+                        <label>Tipo de reclamación</label>
+                        <select class="requiredField" id="complainType" type="text" value="Seleccione">
+                            <option>Seleccione un tipo de reclamación</option>
+                            <option>Reclamo</option>
+                            <option>Queja</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="boxRight">
+                    <div class="itemForm">
+                        <label>Detalle</label>
+                        <textarea class="requiredField" id="complainDescription" type="text"></textarea>
+                    </div>
+                    <div class="itemForm">
+                        <label>Pedido</label>
+                        <textarea class="requiredField" id="complainOrder" type="text"></textarea>
+                    </div>
+                </div>
+            </div>
+            <h2 class="titleLine">Acciones adoptadas por el proveedor</h2>
+            <div class="twoColumns bottom">
+                <div class="boxLeft">
+                    <div class="itemForm">
+                        <label>Detalle (Opcional)</label>
+                        <textarea id="provaiderDescription" type="text"></textarea>
+                    </div>
+                    <div class="itemForm">
+                        <button id="sendInfo" class="btn-lineBlue">Enviar</button>
+                    </div>
+                    <p><strong>RECLAMO: </strong>Disconformidad relacionada a los productos o servicios.</p>
+                    <p><strong>QUEJA: </strong>Disconformidad no relacionada a los productos o servicios o
+                        malestar o descontento respecto a la atención al público.</p>
+                </div>
+                <div class="boxRight">
+                    <div class="itemForm specialItem">
+                        <label class="checkbox">
+                            <input class="requiredField" id="tyc" type="checkbox" />Declaro ser el usuario del servicio
+                            o producto y acepto el contenido del
+                            presente formulario manifestando bajo Declaración Jurada la veracidad de los hechos
+                            descritos
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <vtex:template id="SG-footer" />
+
+    <vtex:template id="commonScripts" />
+    <script type="text/javascript" src="/files/SG-reclamaciones.bundle.min.js"></script>
+</body>
+
+</html>
